@@ -33,8 +33,8 @@ function Todo({ todo, index, doneTodo, deleteTodo })
       style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
     >
       {todo.text}
-      <div>
-        <button onClick={() => doneTodo(index)}><input type="checkbox"/></button>
+     <div>
+        <input type="checkbox" class="largerCheckbox" onChange={() => doneTodo(index)}/>
         <button onClick={() => deleteTodo(index)}>&emsp;Delete&#x1F5D1;</button>
       </div>
     </div>
